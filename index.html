@@ -10,8 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Avenir:wght@100;200;300;400;500;600;700&display=swap"
-        rel="stylesheet" />
+
     <link rel="stylesheet" href="style.css">
     <title>Atlas</title>
 </head>
@@ -37,9 +36,9 @@
                     </div>
                     <div class="navitems" id="navitems">
                         <ul class="navlist">
-                            <li>Docs</li>
-                            <li>Blog</li>
-                            <li>Pricing</li>
+                            <li><a href="#">Docs</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Pricing</a></li>
                         </ul>
                         <div class="navbtns">
                             <button class="btn">Log In</button><button class="btn btn-green">Try For Free</button>
@@ -156,10 +155,41 @@
                 </p>
                 <p class="link"><span><img src="./assets/arrbtn.svg" alt=""></span>Start Building</p>
             </div>
-            <div class="image">
-                <img src="./assets/Group 14.png" alt="">
-                <img src="./assets/Group 15.png" alt="">
-            </div>
+
+            <div class="code">
+                <div class="navi">
+                    <img src="./assets/navilogo.svg" alt="">
+                    <img src="./assets/navir.png" alt="">
+                </div>
+                <div class="cd">
+                    <p>
+                        <span class="const">const</span> accountSid = <span
+                            class="str">'ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'</span><br>
+                        <span class="const">const</span> authToken = <span class="str">'your_auth_token'</span><br>
+                        <span class="const">const</span> client = require(<span
+                            class="str">'atlas-sms-gateway'</span>)(accountSid, authToken) <br> <br>
+                        client.messages <br>
+                        &nbsp;&nbsp; .create({ <br>
+                        &nbsp;&nbsp;body: <span class="str">'This is the ship that made the Kessel Run in fourteen
+                            parsecs?',</span><br>
+
+                        &nbsp;&nbsp;from: <span class="str">'+25417122661'</span>, <br>
+                        &nbsp;&nbsp;to: <span class="str">'+25458675310'</span> <br>
+                        }) <br>
+                        .then(message => console.log(message.sid)) <br>
+                        .done();
+                    </p>
+                </div>
+                <div class="codelangs">
+                    <p>Node</p>
+                    <p>PHP</p>
+                    <p>Java</p>
+                    <p>C#</p>
+                    <p>Go</p>
+                    <p>Python</p>
+                    <p>Scala</p>
+                    <p>Curl</p>
+                </div>
             </div>
         </section>
         <div class="msg hide">
